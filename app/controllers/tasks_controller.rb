@@ -6,7 +6,6 @@ before_action :set_task, only: [:show, :edit, :update, :destroy]
   end
 
   def show
-    
   end
 
   def new
@@ -27,14 +26,11 @@ before_action :set_task, only: [:show, :edit, :update, :destroy]
   end
 
   def edit
-    
+
   end
 
   
   def update
-  
-    
-
     if @task.update(task_params)
       flash[:success] = 'Task は正常に更新されました'
       redirect_to @task
